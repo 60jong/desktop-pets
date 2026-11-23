@@ -1,0 +1,7 @@
+{
+  "id": "agumon-evolution",
+  "displayName": "Agumon (Evolution)",
+  "description": "Agumon that evolves into WarGreymon while Codex is working.",
+  "spriteVersionNumber": 2,
+  "spritesheetPath": "spritesheet.png"
+}
