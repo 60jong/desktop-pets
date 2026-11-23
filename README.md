@@ -64,7 +64,7 @@ Codex pet v2 형식(192 × 208 칸 8 × 11 격자, 1536 × 2288 투명 PNG)을 �
 
 ### 아구몬 (`agoumon`)
 
-평소엔 아구몬으로 돌아다니다 손 흔들기·점프·검토(review) 때 워그레이몬으로 진화해요. 작업 중엔 워그레이몬으로 날아다녀요.
+평소엔 아구몬으로 돌아다니다 손 흔들기·점프·검토(review) 때 워그레이몬으로 진화해요. 작업 중엔 아구몬이 꼬마 불꽃을 쏴요.
 
 <table>
 <tr><th><sub>Idle</sub></th><th><sub>Run →</sub></th><th><sub>Run ←</sub></th><th><sub>Wave</sub></th><th><sub>Jump</sub></th></tr>
