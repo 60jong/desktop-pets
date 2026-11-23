@@ -1,0 +1,7 @@
+{
+  "id": "sprouty",
+  "displayName": "Sprouty",
+  "description": "A sprout gecko that evolves into the Grove Warden when work is done.",
+  "spriteVersionNumber": 2,
+  "spritesheetPath": "spritesheet.png"
+}
