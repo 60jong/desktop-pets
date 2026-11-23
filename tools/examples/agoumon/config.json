@@ -1,0 +1,18 @@
+{
+  "id": "agoumon",
+  "displayName": "Agumon",
+  "description": "Agumon that digivolves into WarGreymon while Codex reviews your work.",
+  "source": "source.png",
+  "background": "auto",
+  "grid": {"cols": 8, "rows": 7},
+  "states": {
+    "idle":          {"cells": [0, 1, 2, 3, 4, 5]},
+    "running-right": {"cells": [8, 9, 10, 11, 12, 13, 14, 15]},
+    "running-left":  {"mirror": "running-right"},
+    "waving":        {"cells": [16, 17, 18, 19]},
+    "jumping":       {"cells": [19, 20, 21, 22, 23]},
+    "waiting":       {"cells": [2, 3, 4, 5, 6, 7]},
+    "running":       {"cells": [40, 41, 42, 43, 44, 45]},
+    "review":        {"cells": [25, 26, 27, 29, 30, 31]}
+  }
+}

@@ -62,6 +62,29 @@ Codex pet v2 형식(192 × 208 칸 8 × 11 격자, 1536 × 2288 투명 PNG)을 �
 </tr>
 </table>
 
+### 아구몬 (`agoumon`)
+
+평소엔 아구몬으로 돌아다니다 손 흔들기·점프 때 꼬마 불꽃을 쏴요. 작업 중엔 워그레이몬으로 날아다니고, 검토(review) 상태에선 진화 연출이 나와요.
+
+<table>
+<tr><th><sub>Idle</sub></th><th><sub>Run →</sub></th><th><sub>Run ←</sub></th><th><sub>Wave</sub></th><th><sub>Jump</sub></th></tr>
+<tr>
+<td><img src="assets/motions/agoumon/idle.gif" width="96" alt="Idle"></td>
+<td><img src="assets/motions/agoumon/running-right.gif" width="96" alt="Run right"></td>
+<td><img src="assets/motions/agoumon/running-left.gif" width="96" alt="Run left"></td>
+<td><img src="assets/motions/agoumon/waving.gif" width="96" alt="Wave"></td>
+<td><img src="assets/motions/agoumon/jumping.gif" width="96" alt="Jump"></td>
+</tr>
+<tr><th><sub>Failed</sub></th><th><sub>Waiting</sub></th><th><sub>Working</sub></th><th><sub>Review (진화)</sub></th><th><sub>16-way look</sub></th></tr>
+<tr>
+<td><img src="assets/motions/agoumon/failed.gif" width="96" alt="Failed"></td>
+<td><img src="assets/motions/agoumon/waiting.gif" width="96" alt="Waiting"></td>
+<td><img src="assets/motions/agoumon/running.gif" width="96" alt="Working"></td>
+<td><img src="assets/motions/agoumon/review.gif" width="96" alt="Review evolution"></td>
+<td><img src="assets/motions/agoumon/look.gif" width="96" alt="Look"></td>
+</tr>
+</table>
+
 ## 설치
 
 **macOS · Linux**
