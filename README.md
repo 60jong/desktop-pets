@@ -85,6 +85,29 @@ Codex pet v2 형식(192 × 208 칸 8 × 11 격자, 1536 × 2288 투명 PNG)을 �
 </tr>
 </table>
 
+### 김민경 최고 (`minkyung`)
+
+반짝이는 글자들이 둥실둥실 떠다니며 상태마다 김민경을 찬양해요. 평소엔 "김민경 최고", 이동할 땐 "민경 출동!", 작업 중엔 "열일하는 김민경", 검토 땐 왕관과 함께 "역시 김민경", 실패해도 "괜찮아 → 그래도 최고"로 응원해요.
+
+<table>
+<tr><th><sub>Idle</sub></th><th><sub>Run →</sub></th><th><sub>Run ←</sub></th><th><sub>Wave</sub></th><th><sub>Jump</sub></th></tr>
+<tr>
+<td><img src="assets/motions/minkyung/idle.gif" width="96" alt="Idle"></td>
+<td><img src="assets/motions/minkyung/running-right.gif" width="96" alt="Run right"></td>
+<td><img src="assets/motions/minkyung/running-left.gif" width="96" alt="Run left"></td>
+<td><img src="assets/motions/minkyung/waving.gif" width="96" alt="Wave"></td>
+<td><img src="assets/motions/minkyung/jumping.gif" width="96" alt="Jump"></td>
+</tr>
+<tr><th><sub>Failed</sub></th><th><sub>Waiting</sub></th><th><sub>Working</sub></th><th><sub>Review</sub></th><th><sub>16-way look</sub></th></tr>
+<tr>
+<td><img src="assets/motions/minkyung/failed.gif" width="96" alt="Failed"></td>
+<td><img src="assets/motions/minkyung/waiting.gif" width="96" alt="Waiting"></td>
+<td><img src="assets/motions/minkyung/running.gif" width="96" alt="Working"></td>
+<td><img src="assets/motions/minkyung/review.gif" width="96" alt="Review"></td>
+<td><img src="assets/motions/minkyung/look.gif" width="96" alt="Look"></td>
+</tr>
+</table>
+
 ## 설치
 
 **macOS · Linux**
@@ -136,6 +159,8 @@ irm https://raw.githubusercontent.com/60jong/desktop-pets/main/install.ps1 | iex
 pip install pillow
 python3 tools/build_sprouty.py build
 ```
+
+김민경 최고 펫은 `python3 tools/build_minkyung.py`로 다시 만들 수 있어요. 글꼴은 [Jua](https://fonts.google.com/specimen/Jua)(SIL OFL, `tools/fonts/`)를 써요.
 
 `build/sprouty/`에 펫 폴더가, `build/previews/`에 상태별 GIF가 생겨요.
 

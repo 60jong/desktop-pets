@@ -6,7 +6,7 @@
 $ErrorActionPreference = 'Stop'
 
 $repoRawUrl = 'https://raw.githubusercontent.com/60jong/desktop-pets/main'
-$availablePets = @('sprouty', 'mochi', 'agoumon')
+$availablePets = @('sprouty', 'mochi', 'agoumon', 'minkyung')
 $requestedPets = if ($env:DESKTOP_PETS) { $env:DESKTOP_PETS -split '[,\s]+' | Where-Object { $_ } } else { $availablePets }
 
 $codexHome = if ($env:CODEX_HOME) { $env:CODEX_HOME } else { Join-Path $HOME '.codex' }

@@ -5,7 +5,7 @@
 set -eu
 
 REPO_RAW_URL="https://raw.githubusercontent.com/60jong/desktop-pets/main"
-AVAILABLE_PETS="sprouty mochi agoumon"
+AVAILABLE_PETS="sprouty mochi agoumon minkyung"
 REQUESTED_PETS=$(printf '%s' "${DESKTOP_PETS:-$AVAILABLE_PETS}" | tr ',' ' ')
 PETS_ROOT="${CODEX_HOME:-$HOME/.codex}/pets"
 
