@@ -1,11 +1,11 @@
 #!/bin/sh
 # Installs Desktop Pets into the Codex pets folder (macOS / Linux).
 # Usage: curl -fsSL https://raw.githubusercontent.com/60jong/desktop-pets/main/install.sh | sh
-# Pick specific pets: DESKTOP_PETS="sprouty" sh install.sh
+# Pick specific pets: DESKTOP_PETS="sprouty,mochi" sh install.sh
 set -eu
 
 REPO_RAW_URL="https://raw.githubusercontent.com/60jong/desktop-pets/main"
-AVAILABLE_PETS="sprouty"
+AVAILABLE_PETS="sprouty mochi"
 REQUESTED_PETS=$(printf '%s' "${DESKTOP_PETS:-$AVAILABLE_PETS}" | tr ',' ' ')
 PETS_ROOT="${CODEX_HOME:-$HOME/.codex}/pets"
 

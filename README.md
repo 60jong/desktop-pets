@@ -39,6 +39,29 @@ Codex pet v2 형식(192 × 208 칸 8 × 11 격자, 1536 × 2288 투명 PNG)을 �
 
 > 진화 연출은 review 애니메이션 동안만 보이고, 다른 상태로 넘어가면 다시 새싹이로 돌아와요.
 
+### 모찌 (`mochi`)
+
+머리에 잎사귀가 달린 동글동글한 찹쌀떡이에요. 작업 중엔 땀을 흘리고, 기다릴 땐 졸고, 검토할 땐 안경을 써요.
+
+<table>
+<tr><th><sub>Idle</sub></th><th><sub>Run →</sub></th><th><sub>Run ←</sub></th><th><sub>Wave</sub></th><th><sub>Jump</sub></th></tr>
+<tr>
+<td><img src="assets/motions/mochi/idle.gif" width="96" alt="Idle"></td>
+<td><img src="assets/motions/mochi/running-right.gif" width="96" alt="Run right"></td>
+<td><img src="assets/motions/mochi/running-left.gif" width="96" alt="Run left"></td>
+<td><img src="assets/motions/mochi/waving.gif" width="96" alt="Wave"></td>
+<td><img src="assets/motions/mochi/jumping.gif" width="96" alt="Jump"></td>
+</tr>
+<tr><th><sub>Failed</sub></th><th><sub>Waiting</sub></th><th><sub>Working</sub></th><th><sub>Review</sub></th><th><sub>16-way look</sub></th></tr>
+<tr>
+<td><img src="assets/motions/mochi/failed.gif" width="96" alt="Failed"></td>
+<td><img src="assets/motions/mochi/waiting.gif" width="96" alt="Waiting"></td>
+<td><img src="assets/motions/mochi/running.gif" width="96" alt="Working"></td>
+<td><img src="assets/motions/mochi/review.gif" width="96" alt="Review"></td>
+<td><img src="assets/motions/mochi/look.gif" width="96" alt="Look"></td>
+</tr>
+</table>
+
 ## 설치
 
 **macOS · Linux**
@@ -92,3 +115,20 @@ python3 tools/build_sprouty.py build
 ```
 
 `build/sprouty/`에 펫 폴더가, `build/previews/`에 상태별 GIF가 생겨요.
+
+## 내 캐릭터로 펫 만들기
+
+`tools/make_pet.py`는 직접 그린 프레임이나 스프라이트 시트를 위 형식으로 묶어줘요. 배경 제거, 모든 프레임 같은 배율로 맞추기, 발 위치 정렬, 상태별 미리보기 GIF 생성까지 한 번에 해요.
+
+```bash
+pip install pillow
+python3 tools/make_pet.py tools/examples/mochi/config.json -o build/mochi
+```
+
+설정 파일에는 상태마다 프레임을 넣는 방법 세 가지를 쓸 수 있어요.
+
+- `files`: 개별 PNG 목록
+- `cells`: `source` 시트를 `grid`(열·행)로 나눈 칸 번호
+- `boxes`: `source` 시트에서 잘라낼 `[x, y, w, h]` 좌표
+
+`{"mirror": "running-right"}`처럼 다른 상태를 좌우반전할 수도 있어요. 빠진 상태도 자동으로 채워요. running-left는 오른쪽 달리기를 반전하고, 나머지와 16방향 시선은 idle 프레임으로 대신해요. 모찌는 `tools/examples/mochi/draw_frames.py`가 프레임을 그리고, 이 도구로 시트를 만든 예시예요.
